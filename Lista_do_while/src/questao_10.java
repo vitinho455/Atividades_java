@@ -18,10 +18,12 @@ public class questao_10 {
 		do {
 			
 			System.out.println("Sua pontuação é: " + pontuacao);
-			
-			System.out.println("Escolha entre par ou impar: ");
-			escolha = sc.nextLine();
-			
+
+			do {
+				System.out.println("Escolha entre par ou impar: ");
+				escolha = sc.nextLine();
+			}while(!escolha.equals("par") && !escolha.equals("impar"));
+
 			System.out.println("Insira um número de 0 a 10 ");
 			System.out.println();
 			
@@ -59,43 +61,20 @@ public class questao_10 {
 			System.out.println("Soma dos números inseridos pelo usuário = " + somaUsuario);
 			
 			
-			// condição para a soma aleatória
-			if(somaAleatorio % 2 == 0) {
-				
-				System.out.println("A soma do sistema é par!");
-			}else {
-				
-				System.out.println("A soma do sistema é impar!");
-			}
-			
-			// condição para a soma do usuário
-			
-			if(somaUsuario % 2 == 0) {
-				
-				System.out.println("A soma do usuario é par!");
-			}else {
-				
-				System.out.println("A soma do usuario é impar!");
-			}
-			
+			boolean resultado = (somaUsuario % 2 == 0 && escolha.equals("par"))||
+					(somaUsuario % 2 != 0 && escolha.equals("impar"));
 
 			
-			if(somaAleatorio > somaUsuario) {
+			if(resultado) {
 				
-				System.out.println("Você perdeu!");
+				System.out.println("Parabéns! Você venceu esta rodada!");
+				pontuacao ++;
 				
 				
-			}else {
-				System.out.println("Parabéns! Você ganhou um ponto");
-				
-				System.out.println("Você ganhou!");
-				pontuacao += 1;
+			}else{
+				System.out.println("O sistema ganhou esta rodada!");
 			}
-			
-			
-			
-			
-			
+
 			
 			
 			System.out.println("Você quer continuar (True || False): ");
