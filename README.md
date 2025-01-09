@@ -270,3 +270,47 @@ public class questao_39 {
 	}
 
 }
+
+package lista_extra;
+
+import java.util.Scanner;
+
+public class questao_40 {
+
+	public static int soma_Positiva(int numero[]) {
+		
+		int soma = 0;
+		
+		for (int i = 0; i < numero.length; i++) {
+			if(numero[i] > 0) {
+				soma += numero[i];
+			}
+		}
+		
+		System.out.println("Soma dos positivos: " + soma);
+		
+		return soma;
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite a quantidade de valores que terá na sua lista: ");
+		int qtde = sc.nextInt();
+		
+		int numero[] = new int[qtde];
+		
+		for (int i = 0; i < numero.length; i++) {
+			System.out.println("Digite o " +(i+1)+ "° número: ");
+			numero[i] = sc.nextInt();
+		}
+		
+		soma_Positiva(numero);
+		
+	}
+
+}
+
