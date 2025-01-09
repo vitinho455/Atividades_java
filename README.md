@@ -177,7 +177,96 @@ public class questao_56 {
 
 		}
 
+package lista_extra;
+
+import java.util.Scanner;
+
+public class questao_38 {
+
+	public static int lista_Numero(int numero[], int qtde) {
+
+		int menor = Integer.MAX_VALUE;
+
+		for (int i = 0; i < qtde; i++) {
+			if (numero[i] % 2 == 0) {
+
+				if (numero[i] < menor) {
+					menor = numero[i];
+				}
+
+			}
+		}
+
+		System.out.println("Menor " + menor);
+
+		return menor;
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite a quantidade de números: ");
+		int qtde = sc.nextInt();
+
+		int numero[] = new int[qtde];
+
+		for (int i = 0; i < qtde; i++) {
+			System.out.println("Digite o " + (i + 1) + "° número: ");
+			numero[i] = sc.nextInt();
+
+		}
+
+		lista_Numero(numero, qtde);
 		sc.close();
+	}
+
+}
+
+
+		sc.close();
+	}
+
+}
+
+package lista_extra;
+
+import java.util.Scanner;
+
+public class questao_39 {
+
+	public static int quantidadeVogal(String palavra) {
+		
+		int quantidade = 0;
+		char vogal[] = {'a', 'e', 'i', 'o', 'u'};
+		
+		for (int i = 0; i < palavra.length(); i++) {
+			for (char c : vogal) {
+				if(palavra.charAt(i) == c) {
+					quantidade ++;
+					
+				}
+			}
+		}
+		
+		System.out.println("Quantidade de vogais: " + quantidade);
+		
+		return quantidade;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+
+		
+		System.out.println("Digite uma palavra : ");
+		String palavra = sc.nextLine();
+		
+		quantidadeVogal(palavra);
+		
 	}
 
 }
