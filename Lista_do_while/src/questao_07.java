@@ -1,29 +1,22 @@
-package lista_do_while;
-
 import java.util.Scanner;
 
 public class questao_07 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		Scanner sc = new Scanner(System.in);
 
-		int i,numero, soma = 0;
-		
+		int i = 1, numero, soma = 0;
+
 		System.out.println("Digite um número: ");
 		numero = sc.nextInt();
-		
-		for(i = 1; i <= numero; i++) {
-			
+
+		while (i <= numero) {
 			System.out.print(i + " ");
 			soma += i;
-			
+			i++;
 		}
-				
-		System.out.println("Soma = " + soma);
-		
-	}
-	
 
+		System.out.println("\nSoma = " + soma);
+		sc.close();
+	}
 }

@@ -9,13 +9,13 @@ public class questao_01 {
         System.out.println("Digite um valor para N: ");
         n = sc.nextInt();
 
+        int i = 1;
 
-        for (int i = 1; i <= n; i++) {
-
+        while (i <= n) {
             System.out.print(i + " ");
-
+            i++;
         }
-sc.close();
 
-}
+        sc.close();
+    }
 }

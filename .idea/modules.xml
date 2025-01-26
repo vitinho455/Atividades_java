@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Atividades_java.iml" filepath="$PROJECT_DIR$/Atividades_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lista_extra/lista_extra.iml" filepath="$PROJECT_DIR$/lista_extra/lista_extra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lista_for/lista_for.iml" filepath="$PROJECT_DIR$/lista_for/lista_for.iml" />
     </modules>
   </component>
 </project>

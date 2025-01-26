@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Lista_do_while/src"/>
+	<classpathentry kind="src" path="lista_extra/src"/>
+	<classpathentry kind="src" path="lista_for/src"/>
+	<classpathentry kind="output" path="out/production/Atividades_java"/>
+</classpath>

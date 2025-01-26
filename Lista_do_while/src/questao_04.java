@@ -12,15 +12,18 @@ public class questao_04 {
         System.out.println("Digite um número: ");
         numero = sc.nextInt();
 
-        for (int i = numero; i >= 0; i--) {
+        int i = numero;
+
+        while (i >= 0) {
             System.out.print(i + " ");
             try {
                 t.sleep(1000);
             } catch (InterruptedException e) {
-
+                System.out.println("Erro ao pausar a thread.");
             }
 
         }
+
         System.out.println("FIM!");
         sc.close();
     }
