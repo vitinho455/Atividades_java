@@ -1,10 +1,10 @@
-### Atividades - Java
+# Atividades - Java
 
-#### Professor : Gustavo 
+### Professor : Gustavo 
 
-##### Atividades de Lógica de programação utilizando Java.
+### Atividades de Lógica de programação utilizando Java.
 
-#### 🛠️Ferramentas
+### 🛠️Ferramentas
 
 - Java
 - Eclipse | IntelliJ
