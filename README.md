@@ -1,8 +1,6 @@
 # Atividades - Java
 
-### Professor : Gustavo 
-
-### Atividades de Lógica de programação utilizando Java.
+### Atividades de Lógica e Orientação a Objetos em Java
 
 ### 🛠️Ferramentas
 
